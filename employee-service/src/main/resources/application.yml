@@ -1,0 +1,33 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: employee-serivce
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices
+    username: root
+    password: tiger
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka    
+
+
+
+#Local MongoDB config
+
+  #data:
+   # mongodb:
+    #  database: microservices
+     # port: 27017
+      #host: localhost
+      
+      
+ # main:
+  #  allow-bean-definition-overriding: true 
